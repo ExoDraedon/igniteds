@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EUFONIA STUDIO | Creadores de Contenido</title>
+    <title>Igniteds Studio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #6a0dad;
-            --primary-light: #8a4dca;
-            --primary-dark: #4d0a8f;
-            --secondary: #ff6b6b;
+            --primary: #ff6b00;
+            --primary-light: #ff8b33;
+            --primary-dark: #cc5600;
+            --secondary: #6a0dad;
             --accent: #00c9ff;
             --dark: #121212;
             --darker: #0a0a0a;
@@ -20,7 +20,7 @@
             --light-gray: #e0e0e0;
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             --shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            --glow: 0 0 20px rgba(106, 13, 173, 0.5);
+            --glow: 0 0 20px rgba(255, 107, 0, 0.5);
         }
 
         * {
@@ -36,7 +36,7 @@
             line-height: 1.7;
             overflow-x: hidden;
             background-image: 
-                radial-gradient(circle at 10% 20%, rgba(106, 13, 173, 0.1) 0%, rgba(10, 10, 10, 1) 40%),
+                radial-gradient(circle at 10% 20%, rgba(255, 107, 0, 0.1) 0%, rgba(10, 10, 10, 1) 40%),
                 linear-gradient(to bottom, rgba(10, 10, 10, 1), rgba(18, 18, 18, 0.8));
         }
 
@@ -78,7 +78,7 @@
 
         .btn:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(106, 13, 173, 0.4);
+            box-shadow: 0 15px 30px rgba(255, 107, 0, 0.4);
         }
 
         .btn::after {
@@ -103,8 +103,46 @@
         }
 
         .btn-secondary:hover {
-            background: rgba(106, 13, 173, 0.2);
+            background: rgba(255, 107, 0, 0.2);
         }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 25px;
+            background: rgba(30, 30, 30, 0.8);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin: 5px;
+            min-width: 180px;
+        }
+
+        .social-btn i {
+            margin-right: 10px;
+            font-size: 1.4rem;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            background: rgba(40, 40, 40, 0.9);
+        }
+
+        .social-btn.discord { background: rgba(88, 101, 242, 0.15); }
+        .social-btn.discord:hover { background: rgba(88, 101, 242, 0.25); }
+
+        .social-btn.tiktok { background: rgba(0, 0, 0, 0.15); }
+        .social-btn.tiktok:hover { background: rgba(0, 0, 0, 0.25); }
+
+        .social-btn.twitter { background: rgba(29, 161, 242, 0.15); }
+        .social-btn.twitter:hover { background: rgba(29, 161, 242, 0.25); }
+
+        .social-btn.patreon { background: rgba(249, 104, 84, 0.15); }
+        .social-btn.patreon:hover { background: rgba(249, 104, 84, 0.25); }
 
         /* Header Styles */
         header {
@@ -117,7 +155,7 @@
             transition: var(--transition);
             backdrop-filter: blur(10px);
             background: rgba(10, 10, 10, 0.85);
-            border-bottom: 1px solid rgba(106, 13, 173, 0.2);
+            border-bottom: 1px solid rgba(255, 107, 0, 0.2);
         }
 
         header.scrolled {
@@ -212,7 +250,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 70% 20%, rgba(106, 13, 173, 0.15) 0%, transparent 40%);
+            background: radial-gradient(circle at 70% 20%, rgba(255, 107, 0, 0.15) 0%, transparent 40%);
             z-index: -1;
         }
 
@@ -254,6 +292,7 @@
         .hero-btns {
             display: flex;
             gap: 20px;
+            flex-wrap: wrap;
         }
 
         .hero-image {
@@ -295,36 +334,36 @@
             justify-content: center;
             font-size: 40px;
             color: white;
-            background: rgba(106, 13, 173, 0.15);
+            background: rgba(255, 107, 0, 0.15);
             backdrop-filter: blur(5px);
         }
 
-        .front { transform: translateZ(50px); background: rgba(106, 13, 173, 0.25); }
-        .back { transform: rotateY(180deg) translateZ(50px); background: rgba(106, 13, 173, 0.25); }
-        .left { transform: rotateY(-90deg) translateZ(50px); background: rgba(138, 77, 202, 0.25); }
-        .right { transform: rotateY(90deg) translateZ(50px); background: rgba(138, 77, 202, 0.25); }
-        .top { transform: rotateX(90deg) translateZ(50px); background: rgba(77, 10, 143, 0.25); }
-        .bottom { transform: rotateX(-90deg) translateZ(50px); background: rgba(77, 10, 143, 0.25); }
+        .front { transform: translateZ(50px); background: rgba(255, 107, 0, 0.25); }
+        .back { transform: rotateY(180deg) translateZ(50px); background: rgba(255, 107, 0, 0.25); }
+        .left { transform: rotateY(-90deg) translateZ(50px); background: rgba(255, 139, 51, 0.25); }
+        .right { transform: rotateY(90deg) translateZ(50px); background: rgba(255, 139, 51, 0.25); }
+        .top { transform: rotateX(90deg) translateZ(50px); background: rgba(204, 86, 0, 0.25); }
+        .bottom { transform: rotateX(-90deg) translateZ(50px); background: rgba(204, 86, 0, 0.25); }
 
         .floating {
             animation: float 8s ease-in-out infinite;
         }
 
-        /* Services Section */
-        .services {
+        /* Events Section */
+        .events {
             background: rgba(15, 15, 15, 0.9);
             position: relative;
             overflow: hidden;
         }
 
-        .services::before {
+        .events::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 30% 70%, rgba(106, 13, 173, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle at 30% 70%, rgba(255, 107, 0, 0.1) 0%, transparent 70%);
             z-index: -1;
         }
 
@@ -357,51 +396,51 @@
             font-size: 1.1rem;
         }
 
-        .services-grid {
+        .events-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
         }
 
-        .service-card {
+        .event-card {
             background: rgba(25, 25, 25, 0.6);
             border-radius: 15px;
             padding: 40px 30px;
             transition: var(--transition);
-            border: 1px solid rgba(106, 13, 173, 0.2);
+            border: 1px solid rgba(255, 107, 0, 0.2);
             position: relative;
             overflow: hidden;
             backdrop-filter: blur(10px);
             z-index: 2;
         }
 
-        .service-card:hover {
+        .event-card:hover {
             transform: translateY(-10px);
             border-color: var(--primary);
             box-shadow: var(--glow);
         }
 
-        .service-card::before {
+        .event-card::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(106, 13, 173, 0.1), transparent);
+            background: linear-gradient(135deg, rgba(255, 107, 0, 0.1), transparent);
             z-index: -1;
             opacity: 0;
             transition: var(--transition);
         }
 
-        .service-card:hover::before {
+        .event-card:hover::before {
             opacity: 1;
         }
 
-        .service-icon {
+        .event-icon {
             width: 80px;
             height: 80px;
-            background: rgba(106, 13, 173, 0.2);
+            background: rgba(255, 107, 0, 0.2);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -412,19 +451,19 @@
             transition: var(--transition);
         }
 
-        .service-card:hover .service-icon {
+        .event-card:hover .event-icon {
             background: var(--primary);
             transform: scale(1.1);
             color: white;
         }
 
-        .service-card h3 {
+        .event-card h3 {
             font-size: 1.7rem;
             margin-bottom: 20px;
             text-align: center;
         }
 
-        .service-card p {
+        .event-card p {
             color: var(--light-gray);
             text-align: center;
             font-size: 1.05rem;
@@ -490,7 +529,7 @@
         }
 
         .highlight {
-            background: rgba(106, 13, 173, 0.2);
+            background: rgba(255, 107, 0, 0.2);
             padding: 30px;
             border-radius: 15px;
             border-left: 4px solid var(--accent);
@@ -534,7 +573,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 80% 30%, rgba(106, 13, 173, 0.1) 0%, transparent 60%);
+            background: radial-gradient(circle at 80% 30%, rgba(255, 107, 0, 0.1) 0%, transparent 60%);
             z-index: -1;
         }
 
@@ -611,13 +650,16 @@
 
         .contact-content {
             display: flex;
-            gap: 60px;
+            flex-direction: column;
+            align-items: center;
             position: relative;
             z-index: 2;
         }
 
         .contact-info {
-            flex: 1;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 50px;
         }
 
         .contact-info h2 {
@@ -631,75 +673,54 @@
             font-size: 1.1rem;
         }
 
-        .contact-details {
-            margin-bottom: 40px;
-        }
-
-        .contact-item {
+        .social-buttons {
             display: flex;
-            align-items: center;
-            margin-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
         }
 
-        .contact-icon {
-            width: 50px;
-            height: 50px;
-            background: rgba(106, 13, 173, 0.2);
+        .sponsor-section {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px;
+            background: rgba(25, 25, 25, 0.6);
+            border-radius: 15px;
+            border-top: 3px solid var(--primary);
+            max-width: 800px;
+        }
+
+        .sponsor-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .sponsor-logos {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .sponsor-logo {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 20px;
-            font-size: 20px;
-            color: var(--accent);
-        }
-
-        .contact-form {
-            flex: 1;
-            background: rgba(25, 25, 25, 0.6);
-            padding: 40px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(106, 13, 173, 0.3);
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 14px 20px;
-            background: rgba(40, 40, 40, 0.7);
-            border: 1px solid rgba(106, 13, 173, 0.2);
-            border-radius: 8px;
-            color: var(--light);
-            font-size: 1rem;
-            transition: var(--transition);
-        }
-
-        .form-control:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(106, 13, 173, 0.3);
-        }
-
-        textarea.form-control {
-            min-height: 150px;
-            resize: vertical;
+            font-size: 3rem;
+            color: var(--primary);
+            font-weight: bold;
         }
 
         /* Footer */
         footer {
             background: rgba(5, 5, 5, 0.95);
             padding: 70px 0 30px;
-            border-top: 1px solid rgba(106, 13, 173, 0.2);
+            border-top: 1px solid rgba(255, 107, 0, 0.2);
         }
 
         .footer-content {
@@ -762,7 +783,7 @@
             justify-content: center;
             width: 45px;
             height: 45px;
-            background: rgba(106, 13, 173, 0.2);
+            background: rgba(255, 107, 0, 0.2);
             color: var(--light);
             border-radius: 50%;
             font-size: 1.2rem;
@@ -821,10 +842,6 @@
             .about-content {
                 flex-direction: column;
             }
-            
-            .contact-content {
-                flex-direction: column;
-            }
         }
 
         @media (max-width: 768px) {
@@ -848,6 +865,16 @@
                 flex-direction: column;
                 gap: 20px;
             }
+            
+            .social-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .sponsor-logos {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
@@ -857,12 +884,12 @@
         <div class="container">
             <div class="nav-container">
                 <div class="logo">
-                    <div class="logo-text">EUFONIA</div>
+                    <div class="logo-text">IGNITEDS STUDIO</div>
                 </div>
                 
                 <ul class="nav-links">
                     <li><a href="#hero">Inicio</a></li>
-                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#events">Eventos</a></li>
                     <li><a href="#about">Nosotros</a></li>
                     <li><a href="#projects">Proyectos</a></li>
                     <li><a href="#contact">Contacto</a></li>
@@ -879,12 +906,12 @@
     <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-subtitle">Creadores de Contenido para Creadores</div>
-                <h1 class="hero-title">Te ayudamos a crear <span>Eventos Increíbles</span></h1>
-                <p class="hero-text">Somos un estudio de desarrollo de videojuegos enfocado en Minecraft. Con una experiencia de más de nueve años en la industria, nos especializamos en organizar, desarrollar y ejecutar eventos, series, servidores y torneos competitivos.</p>
+                <div class="hero-subtitle">Creadores de Eventos en Minecraft</div>
+                <h1 class="hero-title">Experiencias <span>Inolvidables</span></h1>
+                <p class="hero-text">Somos Igniteds Studio, especializados en crear eventos únicos y memorables dentro del universo de Minecraft. Únete a nuestra comunidad en Discord y participa en nuestras experiencias exclusivas.</p>
                 <div class="hero-btns">
-                    <a href="#contact" class="btn">Contactar ahora</a>
-                    <a href="#projects" class="btn btn-secondary">Ver proyectos</a>
+                    <a href="https://discord.gg/M6ms9p3ygG" class="btn">Unirse a Discord</a>
+                    <a href="#projects" class="btn btn-secondary">Ver Proyectos</a>
                 </div>
             </div>
             
@@ -903,46 +930,46 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
+    <!-- Events Section -->
+    <section class="events" id="events">
         <div class="container">
             <div class="section-header">
-                <div class="section-subtitle">Lo que ofrecemos</div>
-                <h2 class="section-title">Nuestros <span>Servicios</span></h2>
-                <p class="section-desc">Especializados en la creación de experiencias únicas dentro del universo de Minecraft para creadores de contenido y comunidades.</p>
+                <div class="section-subtitle">Nuestro enfoque</div>
+                <h2 class="section-title">Experiencias de <span>Eventos</span></h2>
+                <p class="section-desc">Especializados en la creación de eventos únicos dentro del universo de Minecraft para creadores de contenido y comunidades.</p>
             </div>
             
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-icon">
                         <i class="fas fa-calendar-star"></i>
                     </div>
                     <h3>Eventos Especiales</h3>
                     <p>Organizamos eventos únicos y memorables que generan engagement y crecimiento para tu comunidad. Desde lanzamientos hasta experiencias temáticas inmersivas.</p>
                 </div>
                 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-server"></i>
+                <div class="event-card">
+                    <div class="event-icon">
+                        <i class="fas fa-users"></i>
                     </div>
-                    <h3>Servidores Personalizados</h3>
-                    <p>Desarrollo de servidores Minecraft a medida con plugins exclusivos, sistemas económicos, minijuegos y experiencias únicas diseñadas para tu audiencia.</p>
+                    <h3>Comunidad Activa</h3>
+                    <p>Una comunidad vibrante y comprometida que participa regularmente en nuestros eventos y contribuye al crecimiento de nuestros proyectos.</p>
                 </div>
                 
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="event-card">
+                    <div class="event-icon">
                         <i class="fas fa-trophy"></i>
                     </div>
                     <h3>Torneos Competitivos</h3>
                     <p>Organización profesional de torneos con sistemas de puntuación, transmisiones en vivo, comentaristas profesionales y premios atractivos.</p>
                 </div>
                 
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="event-card">
+                    <div class="event-icon">
                         <i class="fas fa-film"></i>
                     </div>
-                    <h3>Series Personalizadas</h3>
-                    <p>Desarrollo de series exclusivas con guiones, builds únicas y mecánicas diseñadas específicamente para el formato de contenido de creadores.</p>
+                    <h3>Experiencias Únicas</h3>
+                    <p>Desarrollo de experiencias exclusivas con mecánicas innovadoras diseñadas específicamente para el formato de eventos en vivo.</p>
                 </div>
             </div>
         </div>
@@ -959,29 +986,30 @@
                 </div>
                 
                 <div class="about-text">
-                    <h2>Conoce a <span>Eufonia Studio</span></h2>
-                    <p>Somos un equipo apasionado de desarrolladores, diseñadores y creadores de contenido especializados en Minecraft. Desde 2014, hemos estado transformando ideas en experiencias digitales memorables.</p>
+                    <h2>Conoce a <span>Igniteds Studio</span></h2>
+                    <p>Somos un equipo apasionado de desarrolladores y creadores de contenido especializados en Minecraft. Con 3 años de experiencia, hemos estado transformando ideas en experiencias digitales memorables.</p>
                     
-                    <p>Nuestra misión es empoderar a los creadores de contenido proporcionándoles experiencias únicas que cautiven a sus audiencias y construyan comunidades vibrantes alrededor de su contenido.</p>
+                    <p>Nuestra misión es crear eventos únicos que cautiven a las audiencias y construyan comunidades vibrantes alrededor de nuestros proyectos.</p>
                     
                     <div class="highlight">
-                        <p>"En EUFONIA STUDIO, no solo creamos eventos; creamos experiencias que perduran en la memoria de las comunidades y definen la carrera de los creadores de contenido."</p>
+                        <p>"En Igniteds Studio, no solo creamos eventos; creamos experiencias que perduran en la memoria de las comunidades y definen la carrera de los creadores de contenido."</p>
+                        <p class="creator">- Cya Sunset, Fundador</p>
                     </div>
                     
-                    <p>Cada proyecto que emprendemos recibe la atención meticulosa y la creatividad que merece. Nuestra experiencia de 9 años en la industria nos ha permitido perfeccionar el arte de crear eventos que generan impacto.</p>
+                    <p>Cada proyecto que emprendemos recibe la atención meticulosa y la creatividad que merece. Nuestra experiencia nos ha permitido perfeccionar el arte de crear eventos que generan impacto.</p>
                     
                     <div class="stats">
                         <div class="stat-item">
-                            <div class="stat-number">9+</div>
+                            <div class="stat-number">3+</div>
                             <div class="stat-label">Años de experiencia</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">250+</div>
+                            <div class="stat-number">50+</div>
                             <div class="stat-label">Eventos realizados</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">50+</div>
-                            <div class="stat-label">Clientes satisfechos</div>
+                            <div class="stat-number">10K+</div>
+                            <div class="stat-label">Comunidad activa</div>
                         </div>
                     </div>
                 </div>
@@ -995,14 +1023,14 @@
             <div class="section-header">
                 <div class="section-subtitle">Nuestro trabajo</div>
                 <h2 class="section-title">Proyectos <span>Destacados</span></h2>
-                <p class="section-desc">Algunos de los eventos y experiencias que hemos creado para destacados creadores de contenido.</p>
+                <p class="section-desc">Algunos de los eventos y experiencias que hemos creado para nuestra comunidad.</p>
             </div>
             
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-overlay">
-                            <h3 class="project-title">Torneo de Supervivencia</h3>
+                            <h3 class="project-title">Squid Bedrock Games 1</h3>
                             <div class="project-category">Evento Competitivo</div>
                         </div>
                     </div>
@@ -1011,8 +1039,8 @@
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-overlay">
-                            <h3 class="project-title">Serie "El Desafío"</h3>
-                            <div class="project-category">Contenido Exclusivo</div>
+                            <h3 class="project-title">Squid Bedrock Games 2</h3>
+                            <div class="project-category">Evento Competitivo</div>
                         </div>
                     </div>
                 </div>
@@ -1020,8 +1048,8 @@
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-overlay">
-                            <h3 class="project-title">Servidor RPG</h3>
-                            <div class="project-category">Desarrollo Personalizado</div>
+                            <h3 class="project-title">SMP de la Comunidad</h3>
+                            <div class="project-category">Mundo de Supervivencia</div>
                         </div>
                     </div>
                 </div>
@@ -1034,81 +1062,32 @@
         <div class="container">
             <div class="contact-content">
                 <div class="contact-info">
-                    <h2>¿Listo para crear algo <span>increíble?</span></h2>
-                    <p>Contáctanos para discutir tu próximo evento, serie o servidor personalizado. Estamos aquí para ayudarte a llevar tu contenido al siguiente nivel.</p>
+                    <h2>Conecta con <span>Nosotros</span></h2>
+                    <p>Síguenos en nuestras redes sociales para estar al tanto de todos nuestros eventos y proyectos. ¡Únete a nuestra comunidad!</p>
                     
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h4>Email</h4>
-                                <p>contacto@eufonia.studio</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h4>Ubicación</h4>
-                                <p>Madrid, España</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div>
-                                <h4>Teléfono</h4>
-                                <p>+34 912 345 678</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-discord"></i></a>
-                        <a href="#"><i class="fab fa-twitch"></i></a>
+                    <div class="social-buttons">
+                        <a href="https://discord.gg/M6ms9p3ygG" class="social-btn discord">
+                            <i class="fab fa-discord"></i> Discord
+                        </a>
+                        <a href="https://www.tiktok.com/@igniteds_studio" class="social-btn tiktok">
+                            <i class="fab fa-tiktok"></i> TikTok
+                        </a>
+                        <a href="https://x.com/squidbedrock" class="social-btn twitter">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="https://www.patreon.com/IgnitedsStudio/membership" class="social-btn patreon">
+                            <i class="fab fa-patreon"></i> Patreon
+                        </a>
                     </div>
                 </div>
                 
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="service">Servicio de interés</label>
-                            <select id="service" class="form-control" required>
-                                <option value="">Selecciona un servicio</option>
-                                <option value="event">Eventos Especiales</option>
-                                <option value="server">Servidores Personalizados</option>
-                                <option value="tournament">Torneos Competitivos</option>
-                                <option value="series">Series Personalizadas</option>
-                                <option value="other">Otro</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn">Enviar mensaje</button>
-                    </form>
+                <div class="sponsor-section">
+                    <h3 class="sponsor-title">Patrocinadores Oficiales</h3>
+                    <p>Contamos con el apoyo de Ulaloud, el mismo patrocinador de Blazium, para llevar a cabo nuestros eventos y proyectos.</p>
+                    <div class="sponsor-logos">
+                        <div class="sponsor-logo">ULALOUD</div>
+                        <div class="sponsor-logo">BLAZIUM</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1119,16 +1098,15 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
-                    <h3>EUFONIA STUDIO</h3>
+                    <h3>IGNITEDS STUDIO</h3>
                     <div class="footer-about">
-                        <p>Creadores de Contenido para Creadores de Contenido. Especializados en el desarrollo de experiencias únicas en Minecraft.</p>
+                        <p>Creadores de eventos únicos en Minecraft. Especializados en experiencias memorables para creadores y comunidades.</p>
                     </div>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-discord"></i></a>
-                        <a href="#"><i class="fab fa-twitch"></i></a>
+                        <a href="https://discord.gg/M6ms9p3ygG"><i class="fab fa-discord"></i></a>
+                        <a href="https://www.tiktok.com/@igniteds_studio"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://x.com/squidbedrock"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.patreon.com/IgnitedsStudio/membership"><i class="fab fa-patreon"></i></a>
                     </div>
                 </div>
                 
@@ -1136,7 +1114,7 @@
                     <h3>Enlaces rápidos</h3>
                     <ul class="footer-links">
                         <li><a href="#hero">Inicio</a></li>
-                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#events">Eventos</a></li>
                         <li><a href="#about">Nosotros</a></li>
                         <li><a href="#projects">Proyectos</a></li>
                         <li><a href="#contact">Contacto</a></li>
@@ -1144,28 +1122,25 @@
                 </div>
                 
                 <div class="footer-col">
-                    <h3>Servicios</h3>
+                    <h3>Proyectos</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Eventos Especiales</a></li>
-                        <li><a href="#">Servidores Personalizados</a></li>
-                        <li><a href="#">Torneos Competitivos</a></li>
-                        <li><a href="#">Series Personalizadas</a></li>
-                        <li><a href="#">Desarrollo de Plugins</a></li>
+                        <li><a href="#">Squid Bedrock Games 1</a></li>
+                        <li><a href="#">Squid Bedrock Games 2</a></li>
+                        <li><a href="#">SMP de la Comunidad</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
-                    <h3>Contacto</h3>
+                    <h3>Patrocinadores</h3>
                     <ul class="footer-links">
-                        <li><i class="fas fa-envelope"></i> contacto@eufonia.studio</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Madrid, España</li>
-                        <li><i class="fas fa-phone-alt"></i> +34 912 345 678</li>
+                        <li><a href="#">Ulaloud</a></li>
+                        <li><a href="#">Blazium</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="copyright">
-                &copy; 2023 EUFONIA STUDIO. Todos los derechos reservados.
+                &copy; 2023 Igniteds Studio. Todos los derechos reservados. Creado por Cya Sunset.
             </div>
         </div>
     </footer>
@@ -1195,8 +1170,8 @@
             });
         });
 
-        // Service card animation on scroll
-        const serviceCards = document.querySelectorAll('.service-card');
+        // Event card animation on scroll
+        const eventCards = document.querySelectorAll('.event-card');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1206,22 +1181,12 @@
             });
         }, { threshold: 0.1 });
 
-        serviceCards.forEach(card => {
+        eventCards.forEach(card => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(30px)';
             card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(card);
         });
-
-        // Form submission
-        const contactForm = document.querySelector('.contact-form form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
-                contactForm.reset();
-            });
-        }
     </script>
 </body>
 </html>
